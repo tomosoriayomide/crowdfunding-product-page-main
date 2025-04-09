@@ -27,19 +27,214 @@
     </style>
   </head>
   <body>
+    <div id="mobileMenu">
+      <div class="href">
+        <h3>About</h3>
+        <hr />
+        <h3>Discover</h3>
+        <hr />
+        <h3>Get Started</h3>
+      </div>
+    </div>
+    <div class="blackBg" id="tnx">
+      <div class="thankYouModal" id="tnx1">
+        <div class="image">
+          <img src="images/icon-check.svg" alt="" class="check" />
+        </div>
+        <div class="h2">
+          <h2>Thanks for your support!</h2>
+        </div>
+        <div class="writes">
+          <p class="paragraphtop">
+            Your pledge brings us one step closer to sharing Mastercraft Bamboo
+            Monitor Riser worldwide. You will get an email once our campaign is
+            completed.
+          </p>
+        </div>
+        <div class="btns">
+          <button class="gotIt" onclick="gotIt()">Got it!</button>
+        </div>
+      </div>
+    </div>
+    <div class="blackBg" id="black">
+      <div class="modaldefault" id="modaldefault">
+        <div class="heading">
+          <div class="flex">
+            <div class="h2">
+              <h2>Back this project</h2>
+            </div>
+            <div class="closeModal">
+              <img
+                src="./images/icon-close-modal.svg"
+                alt=""
+                class="cancelModal"
+                onclick="cancel()"
+              />
+            </div>
+          </div>
+          <p class="paragraphtop" id="tested">
+            Want to support us in bringing Mastercraft Bamboo Monitor Riser out
+            in the world?
+          </p>
+        </div>
+        <div class="pledge" id="border">
+          <div class="radios" onclick="ent()">
+            <div class="circle" id="circle3"></div>
+            <!-- <input type="radio" name="select" id="" /> -->
+          </div>
+          <div class="part2">
+            <h2 class="head">Pledge with no reward</h2>
+            <p class="paragraphtop">
+              Choose to support us without a reward if you simply believe in our
+              project. As a backer,You will be signed up to receive product
+              updates via email.
+            </p>
+            <button class="continue" id="broke" onclick="thankYou()">
+              Continue
+            </button>
+          </div>
+        </div>
+        <div class="pledge" id="border1">
+          <div class="radios" onclick="entered()">
+            <div class="circle" id="circle"></div>
+            <!-- <input type="radio" name="select" id="" onclick="click()"/> -->
+          </div>
+          <div class="part2">
+            <div class="straight">
+              <div class="right">
+                <h2 class="head">Bamboo Stand</h2>
+                <h2 class="none" id="none1">Pledge $25 or more</h2>
+              </div>
+              <div class="left">
+                <h2>
+                  101
+                  <p class="left" id="left">left</p>
+                </h2>
+              </div>
+            </div>
+            <p class="paragraphtop">
+              You get an ergonomic stand made of natural bamboo. You've helped
+              us launch our promotional campaign, and you'll be added to a
+              special Backer member list
+            </p>
+            <hr id="hr" />
+            <div id="enter">
+              <div class="write">
+                <p class="paragraphtop">Enter your pledge</p>
+              </div>
+              <div class="buttons">
+                <button class="inputamt">
+                  $
+                  <input
+                    type="tel"
+                    name="number"
+                    placeholder="25"
+                    id="amount25"
+                    required
+                    onclick="border()"
+                  />
+                </button>
+                <button class="continue" onclick="thankYou()">Continue</button>
+              </div>
+            </div>
+            <!-- <p id="value">Error Min. is $25</p> -->
+          </div>
+        </div>
+        <div class="pledge" id="border2">
+          <div class="radios" onclick="entre()">
+            <div class="circle" id="circle2"></div>
+            <!-- <input type="radio" name="select" id="" /> -->
+          </div>
+          <div class="part2">
+            <div class="straight">
+              <div class="right">
+                <h2 class="head">Black Edition Stand</h2>
+                <h2 class="none" id="none2">Pledge $75 or more</h2>
+              </div>
+              <div class="left">
+                <h2>
+                  64
+                  <p class="left" id="left">left</p>
+                </h2>
+              </div>
+            </div>
+            <p class="paragraphtop">
+              You get a Black Special Edition computer stand and a personal
+              thank you. You’ll be added to our Backer member list. Shipping is
+              included.
+            </p>
+            <hr id="hr2" />
+            <div id="enters">
+              <div class="write">
+                <p class="paragraphtop">Enter your pledge</p>
+              </div>
+              <div class="buttons">
+                <button class="inputamt">
+                  $
+                  <input
+                    type="tel"
+                    name=""
+                    placeholder="75"
+                    id="amount"
+                    required
+                    onclick="border()"
+                  />
+                </button>
+                <button class="continue" onclick="thankYou()">Continue</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pledge" id="nodrop">
+          <div class="radios" id="nodrop">
+            <!-- <input type="radio" name="select" id="nodrop" /> -->
+          </div>
+          <div class="part2">
+            <div class="straight">
+              <div class="right">
+                <h2 class="head" id="head">Mahogany Special Edition</h2>
+                <h2 class="none" id="none3">Pledge $2000 or more</h2>
+              </div>
+              <div class="left">
+                <h2>
+                  0
+                  <p class="left" id="left">left</p>
+                </h2>
+              </div>
+            </div>
+            <p class="paragraphtop">
+              You get two special Edition Mahogany stands, a Backer T-shirt,and
+              a personal thank you. You'll be added to our Backer member list.
+              Shipping is included
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="imga">
       <div class="logo"><img src="./images/logo.svg" alt="" /></div>
-      <div class="aa">
-        <p>About</p>
-        <p>Discover</p>
-        <p>Get Started</p>
+      <div class="flexEnd">
+        <div class="aa">
+        <p class="links">About</p>
+        <p class="links">Discover</p>
+        <p class="links">Get Started</p>
       </div>
-      <img
-        src="./images/icon-hamburger.svg"
-        alt=""
-        class="ham"
-        onclick="window.alert('Designed by Young Lite')"
-      />
+      <div class="changes">
+        <img
+          src="./images/icon-hamburger.svg"
+          alt=""
+          class="ham"
+          id="ham"
+          onclick="phoneMenu()"
+        />
+        <img
+          src="./images/icon-close-menu.svg"
+          alt=""
+          id="closed"
+          onclick="closeDisplay()"
+        />
+      </div>
+      </div>
     </div>
     <div class="cont">
       <div class="box1">
@@ -101,7 +296,7 @@
           </p>
           <div class="bottom">
             <h2>101 <sup>left</sup></h2>
-            <button class="select">Select Reward</button>
+            <button class="select" onclick="modalEmpty()">Select Reward</button>
           </div>
         </div>
         <div class="partb">
@@ -116,7 +311,7 @@
           </p>
           <div class="bottom">
             <h2>64 <sup>left</sup></h2>
-            <button class="select">Select Reward</button>
+            <button class="select" onclick="modalEmpty()">Select Reward</button>
           </div>
         </div>
 
@@ -136,6 +331,13 @@
           </div>
         </div>
       </div>
+    </div>
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <div id="form-preloader" style="display: none">
+      <div class="loader"></div>
     </div>
     <!-- 
  
@@ -183,5 +385,6 @@
     <!-- campaign is completed. Got it! -->
 
     <!-- Success modal end -->
+    <script src="script.js"></script>
   </body>
 </html>
