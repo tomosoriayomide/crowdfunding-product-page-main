@@ -279,7 +279,7 @@ input {
   padding: 10px;
   border: none;
 }
-.changes{
+.changes {
   display: none;
 }
 #closed {
@@ -287,6 +287,7 @@ input {
   height: 20px;
   display: none;
 }
+
 #mobileMenu {
   z-index: 5;
   background-color: white;
@@ -377,7 +378,7 @@ h3 {
   background: #000; /* or any bg you want */
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 99;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -397,7 +398,7 @@ h3 {
     transform: rotate(360deg);
   }
 }
-#form-preloader {
+#modalpreloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -437,17 +438,17 @@ h3 {
 #hr2 {
   display: none;
 }
-.ham:hover{
+.ham:hover {
   cursor: pointer;
 }
-#closed:hover{
+#closed:hover {
   cursor: pointer;
 }
 #outofstock:hover {
   cursor: no-drop;
 }
-.links:hover{
-  color:  hsl(176, 50%, 47%);
+.links:hover {
+  color: hsl(176, 50%, 47%);
   cursor: pointer;
 }
 @media screen and (min-width: 300px) and (max-width: 750px) {
@@ -457,20 +458,20 @@ h3 {
   body {
     width: 100%;
   }
-  .thankYouModal{
+  .thankYouModal {
     width: 90%;
   }
-  #modaldefault{
+  #modaldefault {
     width: 90%;
     margin-top: 40px;
     margin-left: 5%;
     /* background-color: red; */
     /* display: none; */
   }
-  .right{
+  .right {
     flex-direction: column;
   }
-  .changes{
+  .changes {
     display: block;
   }
   .box1,

@@ -31,11 +31,18 @@ function closeDisplay() {
   mobileMenu.style.display = "none";
   closeMenu.style.display = "none";
 }
+const preloaders = document.getElementById("modalpreloader");
 function modalEmpty() {
-  modal1.style.display = "block";
-  modal1bg.style.display = "block";
-  // setTimeout(modalEmpty,5000)
-  // modalEmpty()
+  preloaders.style.display = "flex";
+  modal1.style.display = "none";
+  modal1bg.style.display = "none";
+  setTimeout(
+    (preloaders.style.display = "none"),
+    (modal1.style.display = "block"),
+    (modal1bg.style.display = "block"),
+    5000
+  );
+  modalEmpty();
 }
 function cancel() {
   modal1.style.display = "none";
@@ -107,20 +114,37 @@ function border() {
   pledge25.style.border = "1px solid  hsl(176, 72%, 28%)";
 }
 // console.log(entered);
-function load() {
-  window.addEventListener("load", function () {
-    const preloader = document.getElementById("preloader");
-    const content = document.getElementById("modaldefault");
+// function load() {
+//   window.addEventListener("load", function () {
+//     const preloader = document.getElementById("preloader");
+//     const content = document.getElementById("modaldefault");
 
-    preloader.style.display = "none";
-    content.style.display = "block";
-  });
-  // setTimeout(load,2000);
-}
-load();
-const thank = document.getElementById("tnx");
-const modalFirst = document.getElementById("black");
-const loader = document.getElementById("form-preloader");
+//     preloader.style.display = "none";
+//     //     content.style.display = "block";
+//   });
+// }
+
+// loadStop();
+// }
+// function loadStop() {
+window.addEventListener("load", function () {
+  const preloaders = document.getElementById("preloader");
+  const contents = document.getElementById("black");
+  const modal = document.getElementById("modaldefault");
+
+  setTimeout(() => {
+    preloaders.style.display = "none";
+    contents.style.display = "none";
+    // modal.style.display="none"
+  }, 5000);
+});
+
+// }
+// setTimeout(loadStop, 3000);
+// load();
+// const thank = document.getElementById("tnx");
+// const modalFirst = document.getElementById("black");
+// const loader = document.getElementById("form-preloader");
 
 // thank.addEventListener("submit", function (e) {
 //   loader.style.display = "flex";
